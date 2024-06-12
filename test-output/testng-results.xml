@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-11T14:45:18 IST" name="ValidSuite" finished-at="2024-06-11T14:45:23 IST" duration-ms="5313">
+    <groups>
+    </groups>
+    <test started-at="2024-06-11T14:45:18 IST" name="Test" finished-at="2024-06-11T14:45:23 IST" duration-ms="5313">
+      <class name="com.portal.test.ValidLogin">
+        <test-method is-config="true" signature="startbrowser()[pri:0, instance:com.portal.test.ValidLogin@1d296da]" started-at="2024-06-11T14:45:12 IST" name="startbrowser" finished-at="2024-06-11T14:45:18 IST" duration-ms="5972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method signature="portal_login_valid(java.lang.String,java.lang.String)[pri:0, instance:com.portal.test.ValidLogin@1d296da]" started-at="2024-06-11T14:45:18 IST" name="portal_login_valid" finished-at="2024-06-11T14:45:23 IST" duration-ms="4872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portal_login_valid -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.portal.test.ValidLogin@1d296da]" started-at="2024-06-11T14:45:23 IST" name="closebrowser" finished-at="2024-06-11T14:45:23 IST" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.portal.test.ValidLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- ValidSuite -->
+  <suite started-at="2024-06-11T14:45:33 IST" name="TestNG Dadadriver suite" finished-at="2024-06-11T14:45:33 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- TestNG Dadadriver suite -->
+  <suite started-at="2024-06-11T14:45:27 IST" name="InvalidSuite" finished-at="2024-06-11T14:45:33 IST" duration-ms="6038">
+    <groups>
+    </groups>
+    <test started-at="2024-06-11T14:45:27 IST" name="Test" finished-at="2024-06-11T14:45:33 IST" duration-ms="6038">
+      <class name="com.portal.test.InvalidLogin">
+        <test-method is-config="true" signature="startbrowser()[pri:0, instance:com.portal.test.InvalidLogin@6ed3ccb2]" started-at="2024-06-11T14:45:23 IST" name="startbrowser" finished-at="2024-06-11T14:45:27 IST" duration-ms="3456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method signature="portal_login_invalid(java.lang.String,java.lang.String)[pri:0, instance:com.portal.test.InvalidLogin@6ed3ccb2]" started-at="2024-06-11T14:45:27 IST" name="portal_login_invalid" finished-at="2024-06-11T14:45:33 IST" duration-ms="5889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_invaliduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_invaidpwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portal_login_invalid -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.portal.test.InvalidLogin@6ed3ccb2]" started-at="2024-06-11T14:45:33 IST" name="closebrowser" finished-at="2024-06-11T14:45:33 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.portal.test.InvalidLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- InvalidSuite -->
+</testng-results>

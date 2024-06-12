@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="validuser" value="standard_user"/>
+  <parameter name="invalidpass" value="secret_invaidpwd"/>
+  <parameter name="validpass" value="secret_sauce"/>
+  <parameter name="invaliduser" value="standard_invaliduser"/>
+  <listeners>
+    <listener class-name="com.portal.test.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.portal.test.InvalidLogin">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="startbrowser"/>
+          <include name="portal_login_invalid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.portal.test.InvalidLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
