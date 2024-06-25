@@ -12,12 +12,12 @@ public class InvalidLogin extends Base {
 	public void portal_login_invalid(String invaliduser,String invalidpass) throws InterruptedException {
 		
 		Thread.sleep(2000);
-
+                // Enter invalid username and invalid password
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(invaliduser);
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(invalidpass);
 		Thread.sleep(1000);
-		
+		// click on submit button
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		Thread.sleep(1000);		
 	
