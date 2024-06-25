@@ -19,10 +19,12 @@ public class ValidLogin extends Base {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(pass);
 		Thread.sleep(1000);
-		
+		// click on submit button
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
-				
+		
+		// stores the title of the home page		
 	String title=driver.findElement(By.xpath("//div[@class='app_logo']")).getText();
+		// valiadte the title of the home page page after user navigate to home page
 	Assert.assertTrue(title.contains("Swag Labs"));
 	System.out.println(driver.getTitle());
 	
