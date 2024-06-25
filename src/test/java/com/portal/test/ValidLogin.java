@@ -28,10 +28,10 @@ public class ValidLogin extends Base {
 	String title=driver.findElement(By.xpath("//div[@class='app_logo']")).getText();
 		// valiadte the title of the home page page after user navigate to home page
 	Assert.assertTrue(title.contains("Swag Labs"));
+		// check whether cart is displayed or not
 	Assert.assertTrue(cart.isDisplayed());
-		(//button[contains(text(),'ADD TO CART')])[1]
-	
-	System.out.println(driver.getTitle());
+		// check whether add to cart button is dispayed
+	Assert.assertTrue(addToCartButton.isDisplayed());
 	
 	
 	
