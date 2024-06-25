@@ -20,7 +20,7 @@ public class InvalidLogin extends Base {
 		// click on submit button
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		Thread.sleep(1000);		
-	
+	// validate Error Message is displayed 
 	Assert.assertTrue(driver.findElement(By.xpath("//button[@class='error-button']")).isDisplayed());
 	
 }}
