@@ -13,6 +13,7 @@ public class ValidLogin extends Base {
 	public void portal_login_valid(String user,String pass) throws InterruptedException {
 		
 		Thread.sleep(2000);
+		   // Enter valid username and valid password
 
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(user);
 		Thread.sleep(1000);
