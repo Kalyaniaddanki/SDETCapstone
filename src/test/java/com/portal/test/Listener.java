@@ -10,6 +10,7 @@ public class Listener implements ITestListener{
 	@Override		
     public void onTestFailure(ITestResult arg0) {	
 		Screenshot snap =new Screenshot();
+	    // takes screenshot when the test case is failed
 		snap.takescreenshot();
         // TODO Auto-generated method stub				
       
@@ -20,6 +21,7 @@ public class Listener implements ITestListener{
 	 @Override		
 	    public void onTestSuccess(ITestResult arg0) {					
 		 Screenshot snap =new Screenshot();
+		    // takes screenshot when the test case is passed
 			snap.takescreenshot();
 	        		
 	    }	
