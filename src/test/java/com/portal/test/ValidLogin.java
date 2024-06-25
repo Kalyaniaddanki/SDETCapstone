@@ -21,11 +21,16 @@ public class ValidLogin extends Base {
 		Thread.sleep(1000);
 		// click on submit button
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		 WebElemennt cart = driver.findElement(By.xpath("//*[@data-icon='shopping-cart']"));
+		 WebElemennt addToCartButton = driver.findElement(By.xpath("(//button[contains(text(),'ADD TO CART')])[1]"));
 		
 		// stores the title of the home page		
 	String title=driver.findElement(By.xpath("//div[@class='app_logo']")).getText();
 		// valiadte the title of the home page page after user navigate to home page
 	Assert.assertTrue(title.contains("Swag Labs"));
+	Assert.assertTrue(cart.isDisplayed());
+		(//button[contains(text(),'ADD TO CART')])[1]
+	
 	System.out.println(driver.getTitle());
 	
 	
